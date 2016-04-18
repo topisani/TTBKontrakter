@@ -16,6 +16,10 @@ EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		TTB\TTB\TTB.projitems*{76f3cd05-8f0d-4dc0-9ac2-777c23d78d48}*SharedItemsImports = 13
+		TTB\TTB\TTB.projitems*{a66dcf38-e16b-4c4f-9a47-f6d2133dee23}*SharedItemsImports = 4
+		TTB\TTB\TTB.projitems*{5656e10c-e60a-4fb5-99e5-0b8f59666f0b}*SharedItemsImports = 4
+		TTB\TTB\TTB.projitems*{22f77e64-c7d1-4065-b728-fa5e53da9630}*SharedItemsImports = 4
+		TTB\TTB\TTB.projitems*{55ea282b-a2c6-4b24-bbc1-cbb24cbf88d6}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
