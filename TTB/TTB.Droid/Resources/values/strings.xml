@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string
+      name="image_saved"
+            >Billede gemt</string>
+  <string
+    name="image_save_error"
+            >Fejl ved lagring af billede</string>
+</resources>
+

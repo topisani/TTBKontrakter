@@ -10,10 +10,22 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)MainPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\LabeledEntry.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)ImageWithTouch.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Oplysningsskema.xaml.cs">
+      <DependentUpon>Oplysningsskema.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Page1.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Page2.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\SignPage.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="$(MSBuildThisFileDirectory)GettingStarted.Xamarin" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\Oplysningsskema.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

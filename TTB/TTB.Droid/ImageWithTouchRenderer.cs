@@ -17,6 +17,8 @@ namespace TTB.Droid
             if (e.OldElement == null)
             {
                 SetNativeControl(new DrawView(Context));
+                Element.Save = Control.Save;
+                Element.Clear = Control.Clear;
             }
         }
     }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using TTB.Pages;
 using Xamarin.Forms;
 
 namespace TTB
@@ -12,8 +12,10 @@ namespace TTB
 		public App ()
 		{
             // The root page of your application
-            MainPage = new MainPage();
-		}
+            MainPage = new NavigationPage(new Oplysningsskema());
+            NavigationPage.SetHasBackButton(MainPage, false);
+            NavigationPage.SetHasNavigationBar(MainPage, false);
+        }
 
 		protected override void OnStart ()
 		{

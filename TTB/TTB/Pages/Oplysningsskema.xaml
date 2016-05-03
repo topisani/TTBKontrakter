@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TTB.Pages.Oplysningsskema"
+             Title="Oplysningsskema">
+  <ScrollView>
+    <StackLayout
+      Padding="40">
+      <Label Text="Betaler" FontSize="20"/>
+      <StackLayout
+        Padding="10, 10, 0, 10">
+        <Label Text="Navn"/>
+        <Entry/>
+        <Label Text="CPR nummer" />
+        <Entry/>
+        <Label Text="Privat tlf" />
+        <Entry/>
+        <Label Text="Gade og husnummer" />
+        <Entry/>
+        <Label Text="Postnummer og by" />
+        <Entry/>
+        <Label Text="Arbejdssted" />
+        <Entry/>
+        <Label Text="Stilling" />
+        <Entry/>
+        <Label Text="Arbejds tlf." />
+        <Entry/>
+      </StackLayout>
+      <Label Text="Civiltilstand" />
+      <Picker>
+        <Picker.Items>
+          <x:String>Enlig</x:String>
+          <x:String>Gift</x:String>
+          <x:String>Samlevende</x:String>
+        </Picker.Items>
+      </Picker>
+      <Label Text="Indehaver af forældremyndighed" />
+      <Picker>
+        <Picker.Items>
+          <x:String>Mor</x:String>
+          <x:String>Far</x:String>
+          <x:String>Fælles</x:String>
+        </Picker.Items>
+      </Picker>
+      <Label Text="Ægtefælle/Samlever" FontSize="20"/>
+      <StackLayout
+        Padding="10, 10, 0, 10">
+        <Label Text="Navn"/>
+        <Entry/>
+        <Label Text="CPR nummer" />
+        <Entry/>
+        <Label Text="Arbejdssted" />
+        <Entry/>
+        <Label Text="Stilling" />
+        <Entry/>
+        <Label Text="Arbejds tlf." />
+        <Entry/>
+      </StackLayout>
+      <Label Text="Barnet" FontSize="20"/>
+      <StackLayout
+        Padding="10, 10, 0, 10">
+        <Label Text="Navn"/>
+        <Entry/>
+        <Label Text="CPR nummer" />
+        <Entry/>
+      </StackLayout>
+      <Label Text="Institutionen" FontSize="20"/>
+      <StackLayout
+        Padding="10, 10, 0, 10">
+        <Label Text="Navn"/>
+        <Entry/>
+        <Label Text="Gade og husnummer" />
+        <Entry/>
+        <Label Text="Postnummer og by" />
+        <Entry/>
+        <Label Text="Tlf" />
+        <Entry/>
+      </StackLayout>
+      <Label Text="Dato"/>
+      <DatePicker Format="dd-MM-yyyy" Date="{Binding DateTime.Now}"></DatePicker>
+      <Button
+        Clicked="OpenSignPage"
+        Text="Underskrift"/>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>
